@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GestConecta</title>
+<style>
+/* Estilos básicos para o layout */
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f9f9f9;
+}
+header {
+background-color: #d7a8f7;
+color: white;
+text-align: center;
+padding: 2em;
+}
+nav {
+background-color: #d493f7;
+padding: 1em;
+}
+nav a {
+color: white;
+margin: 0 1em;
+text-decoration: none;
+}
+.container {
+max-width: 800px;
+margin: 2em auto;
+padding: 0 1em;
+}
+.section {
+margin-bottom: 2em;
+}
+.doulas {
+display: flex;
+flex-wrap: wrap;
+gap: 1em;
+}
+.doula-card {
+background-color: white;
+border: 1px solid #ddd;
+padding: 1em;
+width: 45%;
+box-shadow: 0 2px 5px rgba(236, 162, 255, 0.99);
+}
+.doula-header {
+display: flex;
+align-items: center;
+gap: 1em;
+margin-bottom: 1em;
+}
+.doula-header img {
+width: 60px;
+height: 60px;
+border-radius: 50%;
+object-fit: cover;
+}
+form {
+display: flex;
+flex-direction: column;
+gap: 1em;
+}
+input, textarea, button {
+padding: 0.5em;
+font-size: 1em;
+}
+button {
+background-color: #f4a7b9;
+color: white;
+border: none;
+cursor: pointer;
+}
+button:hover {
+background-color: #e089a0;
+}
+footer {
+background-color: #9e78bc;
+color: white;
+text-align: center;
+padding: 1em;
+position: fixed;
+bottom: 0;
+width: 100%;
+}
+</style>
+</head>
+<body>
+<header>
+<img width="30%" src="LogoGest.png" alt="">
+<h1>Encontre Sua Doula Ideal</h1>
+<p>Apoio e cuidado durante sua gravidez, parto e pós-parto</p>
+</header>
+
+<nav>
+<a href="#home">Início</a>
+<a href="#doulas">Nossas Doulas</a>
+<a href="#contato">Contato</a>
+</nav>
+
+<div class="container">
+<section id="home" class="section">
+<h2>Bem-vinda!</h2>
+<p>
+Estamos aqui para ajudar você a encontrar a doula perfeita para acompanhar sua jornada durante a gravidez,
+parto e pós-parto. Nossas doulas são profissionais capacitadas que oferecem suporte emocional, físico e
+informativo, respeitando suas escolhas e necessidades.
+</p>
+</section>
+
+<section id="doulas" class="section">
+<h2>Conheça Nossas Doulas</h2>
+<div class="doulas">
+<div class="doula-card">
+<div class="doula-header">
+<img src="https://dracristianepacheco.com.br/wp-content/uploads/2022/02/Dra_Cristiane_Site_ImgInterna_Beneficios_das_doulas.jpg" alt="Foto de Ana Silva">
+<h3>Ana Silva</h3>
+</div>
+<p><strong>Especialidade:</strong> Parto natural e apoio pós-parto</p>
+<p><strong>Experiência:</strong> 5 anos</p>
+<p><strong>Localização:</strong> São Paulo, SP</p>
+<p>Apaixonada por empoderar mulheres em suas jornadas de maternidade.</p>
+<a href="#contato">Entrar em contato</a>
+</div>
+<div class="doula-card">
+<div class="doula-header">
+<img src="data:image/jpeg;base64,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">
+<h3>Maria Oliveira</h3>
+</div>
+<p><strong>Especialidade:</strong> Parto humanizado e aromaterapia</p>
+<p><strong>Experiência:</strong> 3 anos</p>
+<p><strong>Localização:</strong> Rio de Janeiro, RJ</p>
+<p>Ofereço suporte personalizado para uma experiência tranquila e segura.</p>
+<a href="#contato">Entrar em contato</a>
+</div>
+<!-- Adicione mais doulas conforme necessário -->
+</div>
+</section>
+
+<section id="contato" class="section">
+<h2>Entre em Contato</h2>
+<p>Preencha o formulário abaixo para encontrar a doula ideal ou tirar suas dúvidas.</p>
+<form action="mailto:contato@encontresuadoula.com" method="post" enctype="text/plain">
+<label for="nome">Nome:</label>
+<input type="text" id="nome" name="nome" required>
+
+<label for="email">E-mail:</label>
+<input type="email" id="email" name="email" required>
+
+<label for="cidade">Cidade:</label>
+<input type="text" id="cidade" name="cidade">
+
+<label for="mensagem">Mensagem:</label>
+<textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+<button type="submit">Enviar</button>
+</form>
+</section>
+</div>
+
+<footer>
+<p>© 2025 Encontre Sua Doula Ideal. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>
